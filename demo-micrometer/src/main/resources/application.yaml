@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: demo-micrometer
+
+arconia:
+  otel:
+    exporter:
+      otlp:
+        endpoint: http://localhost:4318
+    metrics:
+      exporter:
+        interval: 5s

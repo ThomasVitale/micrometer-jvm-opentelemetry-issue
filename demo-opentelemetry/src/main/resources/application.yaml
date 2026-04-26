@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: demo-opentelemetry
+
+otel:
+  exporter:
+    otlp:
+      endpoint: http://localhost:4318
+  metric:
+    export:
+      interval: 5000
